@@ -1,0 +1,42 @@
+.notification {
+	position: fixed;
+	top: 20px; left: 20px;
+	z-index: 1000;
+	padding: 20px;
+	opacity: 0;
+	border-radius: 3px;
+	overflow: hidden;
+
+	background-color: #c1c8cf;
+	color: #ffffff;
+
+	a { color: #ffffff; }
+
+	button {
+		background-color: transparent;
+		margin: 0;
+		padding: 0;
+		height: 22px; width: 22px;
+		float: left;
+
+		svg {
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	p {
+		float: left;
+		margin: 0 0 0 10px;
+	}
+
+	&.success {
+		background-color: #6dd9aa;
+		color: #ffffff;
+	}
+
+	&.error {
+		background-color: #f07575;
+		color: #ffffff;
+	}
+}
